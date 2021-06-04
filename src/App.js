@@ -1,23 +1,26 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import { Switch, Route, NavLink, Redirect } from 'react-router-dom'
+import BeerList from './containers/BeerList';
+import BeerItem from './containers/BeerItem';
+import Favorite from './containers/Favorite';
+import test from './containers/test';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="App">
+          <nav>
+              <NavLink to={"/"}> Browse Beers </NavLink>
+              <p> BeerBuddy</p>
+              <NavLink to={"/Favorite"}> Favorite Beers </NavLink>
+          </nav>
+          <Switch>
+              <Route path={"/"} exact component={BeerList} />
+              <Route path={"/beer/:beer"} exact component={BeerItem} />
+              <Route path={"/Favorite"} exact component={Favorite} />
+              
+          </Switch>
+
     </div>
   );
 }

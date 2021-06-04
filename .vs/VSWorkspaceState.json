@@ -1,0 +1,12 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\public",
+    "\\src",
+    "\\src\\actions",
+    "\\src\\containers",
+    "\\src\\reducers"
+  ],
+  "SelectedNode": "\\src\\containers\\BeerItem.js",
+  "PreviewInSolutionExplorer": true
+}

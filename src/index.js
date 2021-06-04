@@ -3,11 +3,24 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { Provider } from 'react-redux';
+import { createStore } from 'redux';
+import { comopseWithDevTools } from "redux-devtools-extension";
+import { applyMiddleware } from "redux";
+import thunk from "redux-thunk";
+import Store from './Store';
+import { BrowserRouter } from "react-router-dom";
+
+
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+    <React.StrictMode>
+        <BrowserRouter>
+        <Provider store={Store}>
+            <App />
+            </Provider>
+        </BrowserRouter>
+    </React.StrictMode>,
   document.getElementById('root')
 );
 
