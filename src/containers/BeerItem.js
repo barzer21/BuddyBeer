@@ -39,8 +39,6 @@ const BeerItem = (props) => {
                     </div>
                         <h3>Description: </h3>
                         <p>{beerData.description}</p>
-                        
-                       
                 </div>)
 
             if (beerState.loading) {
