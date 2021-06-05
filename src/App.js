@@ -4,7 +4,6 @@ import { Switch, Route, NavLink, Redirect } from 'react-router-dom'
 import BeerList from './containers/BeerList';
 import BeerItem from './containers/BeerItem';
 import Favorite from './containers/Favorite';
-import test from './containers/test';
 
 function App() {
   return (
