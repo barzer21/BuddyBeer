@@ -7,11 +7,28 @@ p{
     padding: 0;
 }
 
+
+
 container {
     align-items: center;
     text-align: center;
+    margin: auto;
+
+
 }
 
+body {
+    
+    margin: auto;
+}
+
+a {
+    color: inherit;
+    display: flex;
+    flex-grow: 0.5;
+    flex-direction: column;
+    align-items: center;
+}
 nav {
     display: flex;
     width: 100%;
@@ -20,14 +37,10 @@ nav {
     height: 60px;
     background-color: cadetblue;
     align-items: center;
-    box-shadow:2px 2px 30px rgba(0,0,0,0.3); 
+    box-shadow: 2px 2px 30px rgba(0,0,0,0.3);
+   
 }
 
-.logo{
-    height:30px;
-    text-size-adjust:auto;
-
-}
 
 
 nav a {
@@ -106,6 +119,7 @@ nav p {
     align-items:center;
     border: 1px solid #ffffff;
     border-radius:10px;
+
     margin: 20px;
 }
 
